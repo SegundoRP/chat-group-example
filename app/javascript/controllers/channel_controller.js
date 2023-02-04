@@ -25,8 +25,9 @@ export default class extends Controller {
 
   _received(data) {
     if (data.message) {
-      this.messagesTarget.insertAdjacentHTML('beforeend', data.message)
-      this.scrollToBottom()
+      this.messagesTarget.insertAdjacentHTML('beforeend', data.message);
+      this.scrollToBottom();
+      this.clearMessage();
 
       if (!document.hidden) {
         this.subscription.perform("touch")
