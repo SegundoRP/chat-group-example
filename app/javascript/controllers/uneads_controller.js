@@ -24,7 +24,7 @@ export default class extends Controller {
   }
 
   _received(data) {
-    this.element.classList.add("font-weight-bold")
+    this.element.classList.add("class-font")
 
     if (data.mentions && data.mentions.includes(this.username)) {
       let count = parseInt(this.mentionsTarget.textContent)
