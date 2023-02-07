@@ -6,6 +6,7 @@ export default class extends Controller {
 
   connect() {
     this.username = document.querySelector("meta[name='username']").getAttribute("content")
+    console.log(username)
     this.subscription = consumer.subscriptions.create({ channel: "UnreadsChannel", id: this.data.get("id") }, {
       connected: this._connected.bind(this),
       disconnected: this._disconnected.bind(this),

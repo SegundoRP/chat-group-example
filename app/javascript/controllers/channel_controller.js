@@ -43,3 +43,4 @@ export default class extends Controller {
     window.scrollTo(0,document.body.scrollHeight)
   }
 }
+// https://github.com/gorails-screencasts/realtime-group-chat-revised/blob/master/app/channels/message_channel.rb
